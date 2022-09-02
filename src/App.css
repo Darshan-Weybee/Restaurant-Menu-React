@@ -1,38 +1,260 @@
+:root{
+  --text : #ff514e;
+}
 .App {
+  width: 70%;
+  margin: 4rem auto;
+}
+
+.header{
+  background-color: #070605;
+  height: 20rem;
+  color: white;
+  padding: 1rem;
+}
+
+.header-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 0.5rem 5rem;
+  font-weight: bold;
+}
+
+.header-title-food{
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.header-title-f{
+  font-weight: bold;
+}
+
+.header-login span{
+  margin: 0 2rem 0 0;
+}
+
+.header-desc{
+  width: 30%;
+  margin: auto;
+}
+
+.header-desc-title{
+  font-size: 2.8rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-desc-desc{
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.01rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .container{
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .container .sidebar{
+  width: 20%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+
+.App .container .sidebar .sidebar-button-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.App .container .sidebar .sidebar-button-div .sidebar-button{
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
+  gap: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.App .container .sidebar .sidebar-button-div .sidebar-button:hover{
+  background-color: rgb(218, 218, 218);
+  border-radius: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .container .sidebar .sidebar-button img{
+  height: 2.5rem;
 }
+.App .container .sidebar .sidebar-button span{
+  font-size: 1.3rem;
+}
+
+.App .container .sidebar .sidebar-radio-div .sidebar-radio{
+  font-size: 1.4rem;
+  margin: 0.7rem;
+}
+
+.App .container .sidebar .sidebar-radio-div .sidebar-radio input{
+  width: 1.8rem;
+  height: 1.6rem;
+  margin: 0 0.5rem 0 0;
+  accent-color: red;
+}
+
+.App .container .mainContent{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App .container .mainContent .mainContent-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+.App .container .mainContent .mainContent-header .search{
+  width: 72%;
+  padding: 0.6rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+.App .container .mainContent .mainContent-header .search-btn{
+  width: 3%;
+  border-radius: 4rem;
+  border: 1px solid grey;
+}
+
+.App .container .mainContent .mainContent-header .features{
+  border-radius: 0.7rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  border: 2px solid grey;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.App .container .mainContent .mainContent-header .features:hover{
+  cursor: pointer;
+}
+
+.App .container .mainContent .mainContent-header .features-detail{
+  border: 2px solid grey;
+  border-radius: 0.7rem;
+  position: absolute;
+  right: 21%;
+  top: 21%;
+  background-color: white;
+  z-index: 999;
+  padding: 0.5rem;
+}
+
+.App .container .mainContent .mainContent-header .features-detail div{
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.App .container .mainContent .mainContent-header .features-detail div:hover{
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.App .container .mainContent .mainContent-header .list-view{
+  width: 3%;
+}
+.App .container .mainContent .mainContent-header .grid-view{
+  width: 3%;
+}
+
+.App .container .mainContent .mainContent-content{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mainContent-content-single-item{
+  width: 22%;
+  margin: 0.8rem 1rem;
+  position: relative;
+}
+
+.mainContent-content-single-item img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainContent-content-single-item-name{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.mainContent-content-single-item-dsc{
+  font-size: 1.2rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.mainContent-content-single-item-pc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.2rem 0;
+  font-size: 1.2rem;
+}
+
+.fa-location-dot{
+  color: var(--text);
+  margin: 0 0.3rem 0 0;
+  font-size: 1.4rem;
+}
+
+.mainContent-content-single-item-price{
+  color: var(--text);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.mainContent-content-single-item-rate{
+  position: absolute;
+  top: 10px;
+  left: -3px;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 25%;
+  padding: 0px 3px;
+  font-weight: 500;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #fff;
+  background-color: #ff514e;
+}
+
+.mainContent-content-single-item-rate::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  border-top: 3px solid #ff514e;
+  border-left: 3px solid transparent;
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
+}
+
+.fa-star{
+  margin: 0 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
