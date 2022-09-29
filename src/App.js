@@ -11,6 +11,52 @@ import Pizzas from './Pizzas';
 import axios from 'axios';
 import Header from './Header';
 
+
+const sliderComponent = [
+  {
+    url: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131336/marcus-hot-honey-chicken-and-cornbread-waffles-kit-for-4.618df9b9613b506f65c8342ab2e28b32.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+    tag : "",
+    offer : "",
+    price : ""
+  },
+  {
+    url: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134235/complete-fried-chicken-dinner-for-4.aeabf841c124b9cc2fb0166f27790999.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+    tag : "",
+    offer : "",
+    price : ""
+  },
+  {
+    url: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132987/traditional-meat-empanadas-with-llajua-sauce-12-pack.f2adcfeb4ccf027675047f1367ce83ca.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+    tag : "",
+    offer : "",
+    price : ""
+  },
+  {
+    url: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/110984/pork-buns-12-pack.67a379b014b23c7fd944ab48b9e720f6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+    tag : "",
+    offer : "",
+    price : ""
+  },
+  {
+    url: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/106027/wood-fired-pizzas-best-seller-4-pack.1653bb05922ba153ac178f8365d27f6d.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+    tag : "",
+    offer : "",
+    price : ""
+  },
+  {
+    url: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134704/gramercy-tavern-mushroom-lasagna-4-pack.88c671dec184d8bee908d6f5d8d860f9.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+    tag : "",
+    offer : "",
+    price : ""
+  },
+  {
+    url: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/104768/commanders-palace-three-course-shrimp-and-grits-dinner-for-2.984253533e589547e834420efccc174a.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+    tag : "",
+    offer : "",
+    price : ""
+  }
+]
+
 function App() {
   const [page, setPage] = useState({});
   const [isGridView, setIsGridView] = useState(true);

@@ -36,6 +36,10 @@ const filterData = (data, radio) => {
     }
 }
 
+const search = () => {
+    
+}
+
 function BestFood(props) {
     const [data, setData] = useState([]);
     const { page, isGridView, radio, sort} = props;
