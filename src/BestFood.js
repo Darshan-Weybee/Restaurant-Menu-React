@@ -36,13 +36,10 @@ const filterData = (data, radio) => {
     }
 }
 
-const search = () => {
-    
-}
 
 function BestFood(props) {
     const [data, setData] = useState([]);
-    const { page, isGridView, radio, sort} = props;
+    const { isGridView, radio, sort} = props;
 
     useEffect(() => {
         axios.get(`https://ig-food-menus.herokuapp.com/best-foods`)

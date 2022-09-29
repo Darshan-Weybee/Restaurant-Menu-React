@@ -3,7 +3,7 @@ import React,{useEffect, useState} from "react";
 
 function Sandwiches(props){
     const [data, setData] = useState([]);
-    const {page, isGridView} = props;
+    const {isGridView} = props;
 
     useEffect(() => {
         axios.get(`https://ig-food-menus.herokuapp.com/sandwiches`)

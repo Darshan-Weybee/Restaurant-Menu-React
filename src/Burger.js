@@ -2,7 +2,7 @@ import axios from "axios";
 import React,{useEffect, useState} from "react";
 
 function Burger(props){
-    const {page, isGridView} = props;
+    const {isGridView} = props;
     const [data, setData] = useState([]);
 
     useEffect(() => {
